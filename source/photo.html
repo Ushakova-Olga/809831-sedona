@@ -7,7 +7,6 @@
   <body>
     <header class="page-header">
       <nav class="site-nav">
-        <button class="site-nav__close" type="button">Закрыть меню</button>
         <ul class="site-nav__list">
           <li class="site-nav__item">Главная</li>
           <li class="site-nav__item">
@@ -21,16 +20,18 @@
           </li>
         </ul>
         <button class="site-nav__toggle" type="button">Открыть меню</button>
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="http://placehold.it/102x84" width="102" height="84" alt="Седона">
+        </a>
       </nav>
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/102x84" width="102" height="84" alt="Седона">
-      </a>
-      <div class="main-background"></div>
     </header>
     <main class="inner">
+      <div class="inner-background">
+        <img src="http://placehold.it/230x38" width="230" height="38" alt="Седона">
+      </div>
       <section class="photo-video">
         <header class="inner-header">
-          <h2 class="inner-header__headline sedona-title">Фото и видео</h2>
+          <h1 class="inner-header__headline sedona-title">Фото и видео</h1>
           <p class="inner-header__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </header>
         <ul class="photo-video__list">
@@ -65,7 +66,15 @@
           <h2 class="inner-header__headline sedona-title">Все еще сомневаетесь?</h2>
           <p class="inner-header__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </header>
-        <video controls class="video__video" width="320" height="202" src="#"></video>
+        <div class="video-block">
+          <img src="http://placehold.it/320x202" class="video__video" width="320" height="202" alt="видео">
+          <div class="video-block__controls">
+            <div class="video-block__load"></div>
+            <div class="video-block__repeat"></div>
+            <div class="video-block__cc"></div>
+            <div class="video-block__fullscreen"></div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
