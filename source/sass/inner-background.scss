@@ -1,0 +1,12 @@
+.inner-background {
+  width:320px;
+  height: 160px;
+  background: url("../img/bg-intro-triangle-mobile.svg") 0 134px no-repeat,
+  url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom;
+}
+
+.inner-background__img {
+  padding-top: 52px;
+  /*padding-left: 46px;*/
+}
