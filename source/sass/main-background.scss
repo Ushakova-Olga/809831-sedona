@@ -1,13 +1,11 @@
 .main-background {
-  width:320px;
+  width: 320px;
   height: 389px;
   background: url("../img/bg-intro-triangle-mobile.svg") 0 363px no-repeat,
-  url("../img/bg-back-mobile@1x.jpg");
+    url("../img/bg-back-mobile@1x.jpg");
   background-position: bottom;
-
 }
 
 .main-background__img {
   padding-top: 90px;
-  padding-left: 19px;
 }

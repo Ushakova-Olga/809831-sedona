@@ -1,8 +1,8 @@
-@import "body.scss";
 @import "page-header.scss";
 @import "site-nav.scss";
 @import "sedona-title.scss";
 @import "sedona-description.scss";
+@import "sedona-button.scss";
 @import "main-background.scss";
 @import "inner-background.scss";
 @import "features.scss";
@@ -14,7 +14,25 @@
 @import "inner-header.scss";
 @import "form.scss";
 @import "name.scss";
+@import "contacts.scss";
+@import "modal.scss";
+@import "page-footer.scss";
+@import "copyright.scss";
+@import "video-block.scss";
 
-body { 
+@font-face {
+  font-family: "PT Sans", sans-serif;
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff"),
+    url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
+}
 
+body {
+  font-family: "PT Sans", sans-serif;
+  width: 320px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 auto;
 }

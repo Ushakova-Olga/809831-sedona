@@ -2,11 +2,19 @@
   background: #eeeeee;
 }
 
-.promofeature__item {}
+.promofeature__item {
+  padding-bottom: 17px;
+}
 
-.promofeature__title {}
+.promofeature__title {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 8px;
+}
 
-.promofeature__number {}
+/*.promofeature__number {}*/
 
-.promofeature__description {}
-
+.promofeature__description {
+  padding-left: 40px;
+  padding-right: 40px;
+}
