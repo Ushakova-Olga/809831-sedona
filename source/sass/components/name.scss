@@ -1,0 +1,46 @@
+.name {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/*.name__title {}*/
+
+.name__data {
+  height: 58px;
+  margin-bottom: 23px;
+  margin-left: 20px;
+}
+
+.name__label-name {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.name__input-name {
+  /*  margin-left: 14px;
+  margin-right: 20px;*/
+  height: 58px;
+  border: none;
+  background: #f2f2f2;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.name__input-name--name1 {
+  width: 186px;
+}
+
+.name__input-name--name2 {
+  width: 148px;
+}
+
+.name__input-name--name3 {
+  width: 150px;
+}
+
+.name__input-name::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
