@@ -1,0 +1,54 @@
+.contacts {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/*.contacts__title {}*/
+
+.contacts__data {
+  margin-bottom: 23px;
+  margin-left: 20px;
+}
+
+.contacts__label-phone {
+  font-size: 14px;
+  line-height: 26px;
+  padding-left: 22px;
+}
+
+.contacts__input-phone {
+  height: 58px;
+  width: 258px;
+  border: none;
+  background: #f2f2f2;
+  padding-left: 22px;
+  margin-top: 15px;
+}
+
+.contacts__input-phone::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.contacts__label-email {
+  font-size: 14px;
+  line-height: 26px;
+  padding-left: 22px;
+}
+
+.contacts__input-email {
+  height: 58px;
+  width: 258px;
+  border: none;
+  background: #f2f2f2;
+  padding-left: 22px;
+  margin-top: 15px;
+}
+
+.contacts__input-email::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}

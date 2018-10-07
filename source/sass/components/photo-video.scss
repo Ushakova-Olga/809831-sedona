@@ -1,0 +1,40 @@
+.photo-video {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo-video__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.photo-video__item {
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 18px;
+  padding-top: 22px;
+}
+
+/*.photo-video__img {}*/
+
+.photo-video__desc {
+  font-weight: 700;
+  margin: 0;
+  padding-top: 8px;
+}
+
+.photo-video__author {
+  text-transform: none;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.photo-video__likes {
+  font-weight: 700;
+  padding-left: 36px;
+}

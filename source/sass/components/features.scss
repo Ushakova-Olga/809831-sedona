@@ -1,0 +1,24 @@
+/*.features {}*/
+
+.features__header {
+  padding-top: 38px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background: url("../img/white.svg") 0 224px no-repeat,
+    #ffffff;
+  height: 200px;
+  margin-bottom: 0;
+  background-position: bottom;
+}
+
+.features__headline {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.features__intro {
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
