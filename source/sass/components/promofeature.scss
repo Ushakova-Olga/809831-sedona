@@ -18,3 +18,25 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .promofeature {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .promofeature__item {
+    width: 146px;
+    min-height: 256px;
+  }
+
+  .promofeature__description {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promofeature__item {
+    width: 262px;
+  }
+}

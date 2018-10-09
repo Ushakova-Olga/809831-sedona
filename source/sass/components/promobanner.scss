@@ -26,6 +26,53 @@
 
 .promobanner__img {
   height: 260px;
+  width: 320px;
   padding: 0;
   margin: 0;
+}
+
+.promobanner__img--town {
+  background: url("../img/main-city-mobile@1x.jpg");
+}
+
+.promobanner__img--bridge {
+  background: url("../img/main-bridge-mobile@1x.jpg");
+}
+
+@media (min-width: $tablet-width) {
+  .promobanner {
+    display: flex;
+  }
+
+  .promobanner__img {
+    height: 256px;
+    width: 512px;
+    background-position: center;
+  }
+
+  .promobanner__img--town {
+    background: url("../img/main-city-tablet@1x.jpg");
+  }
+
+  .promobanner__img--bridge {
+    background: url("../img/main-bridge-tablet@1x.jpg");
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promobanner__img {
+    height: 256px;
+    width: 800px;
+  }
+
+  .promobanner__img--town {
+    background: url("../img/main-city-desktop@1x.jpg");
+    background-position: 0 -77px;
+  }
+
+  .promobanner__img--bridge {
+    background: url("../img/main-bridge-desktop@1x.jpg");
+    background-position: 0 -77px;
+  }
 }

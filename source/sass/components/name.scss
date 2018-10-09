@@ -44,3 +44,13 @@
   line-height: 26px;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .name {
+    margin-right: 60px;
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+/*@media (min-width: $desktop-width) {}*/

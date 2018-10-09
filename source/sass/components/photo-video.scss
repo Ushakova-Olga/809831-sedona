@@ -20,6 +20,26 @@
 }
 
 /*.photo-video__img {}*/
+.photo-video__img {
+  width: 280px;
+  height: 280px;
+}
+
+.photo-video__img--sunset {
+  background: url("../img/photo-sunset-mobile@1x.jpg") 0 0 no-repeat;
+}
+
+.photo-video__img--cactus {
+  background: url("../img/photo-cactus-mobile@1x.jpg") 0 0 no-repeat;
+}
+
+.photo-video__img--roads {
+  background: url("../img/photo-roads-mobile@1x.jpg") 0 0 no-repeat;
+}
+
+.photo-video__img--bridge {
+  background: url("../img/photo-bridge-mobile@1x.jpg") 0 0 no-repeat;
+}
 
 .photo-video__desc {
   font-weight: 700;
@@ -37,4 +57,129 @@
 .photo-video__likes {
   font-weight: 700;
   padding-left: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-video__list {
+    border-top: none;
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo-video__item {
+    border-bottom: none;
+    text-align: left;
+    position: relative;
+    padding: 0;
+    background: #f2f2f2;
+  }
+
+  .photo-video__list li {
+    width: 50%;
+  }
+
+  .photo-video__list li:first-child {
+    width: 100%;
+  }
+
+  .photo-video__img--sunset {
+    width: 100%;
+    background: url("../img/photo-sunset-tablet@1x.jpg") 0 0 no-repeat;
+  }
+
+  .photo-video__img--cactus {
+    width: 100%;
+    background: url("../img/photo-cactus-tablet@1x.jpg") 0 0 no-repeat;
+  }
+
+  .photo-video__img--roads {
+    width: 100%;
+    background: url("../img/photo-roads-tablet@1x.jpg") 0 0 no-repeat;
+  }
+
+  .photo-video__img--bridge {
+    width: 100%;
+    background: url("../img/photo-bridge-tablet@1x.jpg") 0 0 no-repeat;
+  }
+
+  .photo-video__desc {
+    padding-left: 19px;
+  }
+
+  .photo-video__author {
+    padding-left: 19px;
+  }
+
+  .photo-video__likes {
+    position: absolute;
+    bottom: 33px;
+    right: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-video__list {
+    border-top: none;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo-video__item {
+    border-bottom: none;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .photo-video__list li {
+    width: 33.3%;
+  }
+
+  .photo-video__list li:first-child {
+    width: 100%;
+  }
+
+  .photo-video__img--sunset {
+    width: 100%;
+    background: url("../img/photo-sunset-desktop@1x.jpg") 0 0 no-repeat;
+  }
+
+  .photo-video__img--cactus {
+    width: 100%;
+    background: url("../img/photo-cactus-desktop@1x.jpg") 0 0 no-repeat;
+  }
+
+  .photo-video__img--roads {
+    width: 100%;
+    background: url("../img/photo-roads-desktop@1x.jpg") 0 0 no-repeat;
+  }
+
+  .photo-video__img--bridge {
+    width: 100%;
+    background: url("../img/photo-bridge-desktop@1x.jpg") 0 0 no-repeat;
+  }
+
+  .photo-video__desc {
+    position: absolute;
+    color: #ffffff;
+    bottom: 50px;
+    left: 23px;
+  }
+
+  .photo-video__author {
+    position: absolute;
+    color: #ffffff;
+    bottom: 25px;
+    left: 23px;
+  }
+
+  .photo-video__likes {
+    position: absolute;
+    color: #ffffff;
+    bottom: 30px;
+    right: 23px;
+  }
 }

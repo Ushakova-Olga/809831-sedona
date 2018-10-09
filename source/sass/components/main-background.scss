@@ -9,3 +9,23 @@
 .main-background__img {
   padding-top: 90px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-background {
+    width: $tablet-width;
+    height: 518px;
+    background: url("../img/bg-intro-triangle-tablet.svg") 0 56px no-repeat,
+      url("../img/bg-back-tablet@1x.jpg");
+    background-position: bottom;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-background {
+    width: $desktop-width;
+    height: 518px;
+    background: url("../img/bg-intro-triangle-desktop.svg") 0 56px no-repeat,
+      url("../img/bg-back-desktop@1x.jpg");
+    background-position: bottom;
+  }
+}
