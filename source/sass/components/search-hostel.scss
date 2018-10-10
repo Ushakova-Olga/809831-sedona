@@ -22,3 +22,17 @@
 .search-hostel__link {
   margin-bottom: 48px;
 }
+
+@media (min-width: $tablet-width) {
+  .search-hostel {
+    min-height: 320px;
+    width: 460px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search-hostel {
+    min-height: 332px;
+  }
+}

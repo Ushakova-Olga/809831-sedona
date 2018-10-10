@@ -19,3 +19,39 @@
   font-weight: 700;
   text-transform: none;
 }
+
+@media (min-width: $tablet-width) {
+  .visited {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: none;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .visited__title {
+    width: 100%;
+  }
+
+  .visited__data {
+    width: 192px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  /*.visited {
+    display: flex;
+    flex-wrap: wrap;
+  }*/
+  .visited {
+
+    margin: 0;
+  }
+
+  /*.visited__title {
+    width: 100%;
+  }*/
+  .visited__data {
+    width: 200px;
+  }
+}

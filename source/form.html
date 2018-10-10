@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   </head>
@@ -20,11 +21,16 @@
           <li class="site-nav__item">
             <a href="#">HTML Academy</a>
           </li>
+          <li class="site-nav__item site-nav__item--logo">
+            <a class="site-nav__logo">
+              <img class="site-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+            </a>
+          </li>
         </ul>
         <button class="site-nav__toggle" type="button">Открыть меню</button>
-        <a class="site-nav__logo">
+        <!--a class="site-nav__logo">
           <img class="site-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
-        </a>
+        </a-->
       </nav>
     </header>
     <main>
@@ -55,7 +61,7 @@
           <section class="form__contacts contacts">
             <h2 class="contacts__title sedona-title">Контактная информация:</h2>
             <div class="contacts__data">
-              <label class="contacts__label-phone" for="phone">Контактный телефон*:</label>
+              <label class="contacts__label-phone" for="phone">Телефон*:</label>
               <input class="contacts__input-phone" id="phone" type="text" name="phone" placeholder="Введите телефон">
             </div>
             <div class="contacts__data">

@@ -18,3 +18,20 @@
   line-height: 26px;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .emotion {
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .emotion__textarea {
+    width: 647px;
+    height: 150px;
+  }
+}
+
+/*@media (min-width: $desktop-width) {}
+*/

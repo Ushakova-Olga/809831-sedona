@@ -17,3 +17,42 @@
   height: 58px;
   border: none;
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .form__opinion {
+    width: 278px;
+    order: -1;
+  }
+
+  .form__name {
+    width: 278px;
+  }
+
+  .form__contacts,
+  .form__visited,
+  .form__emotion {
+    width: 650px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__opinion {
+    width: 406px;
+  }
+
+  .form__name {
+    width: 406px;
+  }
+
+  .form__contacts,
+  .form__visited,
+  .form__emotion {
+    width: 960px;
+  }
+}

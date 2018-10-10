@@ -52,3 +52,51 @@
   line-height: 26px;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    margin-left: 60px;
+    margin-right: 60px;
+    border-bottom: none;
+    width: 100%;
+  }
+
+  .contacts__data {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__input-phone {
+    width: 650px;
+  }
+
+  .contacts__input-email {
+    width: 650px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__title {
+    width: 100%;
+  }
+
+  .contacts__data {
+    min-width: 408px;
+    display: block;
+  }
+
+  .contacts__input-phone {
+    width: 322px;
+  }
+
+  .contacts__input-email {
+    width: 314px;
+  }
+}
