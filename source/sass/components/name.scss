@@ -3,7 +3,10 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
-/*.name__title {}*/
+.name__title {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
 
 .name__data {
   height: 58px;
@@ -17,8 +20,6 @@
 }
 
 .name__input-name {
-  /*  margin-left: 14px;
-  margin-right: 20px;*/
   height: 58px;
   border: none;
   background: #f2f2f2;
@@ -47,10 +48,51 @@
 
 @media (min-width: $tablet-width) {
   .name {
-    margin-right: 60px;
     border-top: none;
     border-bottom: none;
+    margin-left: 0;
+  }
+
+  .name__title {
+    margin: 0;
+    padding-bottom: 55px;
+    text-align: left;
+  }
+
+  .name__data {
+    width: 268px;
+    margin-left: 0;
+    margin-bottom: 21px;
+  }
+
+  .name__label-name {
+    padding-right: 8px;
+  }
+
+  .name__input-name {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .name__input-name--name1 {
+    width: 173px;
+  }
+
+  .name__input-name--name2 {
+    width: 135px;
+  }
+
+  .name__input-name--name3 {
+    width: 136px;
   }
 }
 
-/*@media (min-width: $desktop-width) {}*/
+@media (min-width: $desktop-width) {
+  .name__title {
+    padding-left: 2px;
+  }
+
+  .name__data {
+    padding-left: 2px;
+  }
+}

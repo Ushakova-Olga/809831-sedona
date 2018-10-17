@@ -2,8 +2,6 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
-/*.contacts__title {}*/
-
 .contacts__data {
   margin-bottom: 23px;
   margin-left: 20px;
@@ -17,10 +15,11 @@
 
 .contacts__input-phone {
   height: 58px;
-  width: 258px;
+  width: 176px;
   border: none;
   background: #f2f2f2;
   padding-left: 22px;
+  padding-right: 82px;
   margin-top: 15px;
 }
 
@@ -39,10 +38,11 @@
 
 .contacts__input-email {
   height: 58px;
-  width: 258px;
+  width: 176px;
   border: none;
   background: #f2f2f2;
   padding-left: 22px;
+  padding-right: 82px;
   margin-top: 15px;
 }
 
@@ -55,36 +55,45 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin-left: 60px;
-    margin-right: 60px;
     border-bottom: none;
     width: 100%;
+  }
+
+  .contacts__title {
+    margin-top: 40px;
+    margin-bottom: 22px;
   }
 
   .contacts__data {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-left: 0;
   }
 
   .contacts__input-phone {
-    width: 650px;
+    width: 548px;
+    margin-top: 7px;
   }
 
   .contacts__input-email {
-    width: 650px;
+    width: 548px;
+    margin-top: 7px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .contacts__title {
     width: 100%;
+    margin-top: 35px;
+    margin-bottom: 65px;
   }
 
   .contacts__data {
@@ -92,11 +101,20 @@
     display: block;
   }
 
+  .contacts__label-phone {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
   .contacts__input-phone {
-    width: 322px;
+    width: 215px;
+  }
+
+  .contacts__label-email {
+    padding-right: 10px;
   }
 
   .contacts__input-email {
-    width: 314px;
+    width: 215px;
   }
 }

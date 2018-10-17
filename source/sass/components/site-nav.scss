@@ -1,6 +1,5 @@
 .site-nav {
   position: relative;
-  margin-bottom: 56px;
 }
 
 .site-nav__list {
@@ -9,8 +8,9 @@
   margin: 0;
 }
 
-.site-nav__item,
-.site-nav__item a {
+.site-nav__list a {
+  display: block;
+  padding: 7px 21px;
   background: #81b3d2;
   font-size: 18px;
   line-height: 40px;
@@ -19,61 +19,165 @@
   text-decoration: none;
 }
 
-.site-nav__item {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.site-nav__item--logo {
-  padding: 0;
-}
-
-.site-nav__item--logo a {
-  background: transparent;
-}
-
 .site-nav__logo-image {
-  background: url("../img/logo-sedona-mobile.svg");
   width: 102px;
   height: 84px;
 }
 
-.site-nav__toggle {
-  position: absolute;
-  bottom: -38px;
-  right: 20px;
-  width: 24px;
-  height: 23px;
-  border: none;
-  background-color: transparent;
-}
+@media (max-width: $mobile-width-only) {
+  .site-nav__list a[href] {
+    &:hover {
+      background-color: #669ec0;
+      border-top-color: #669ec0;
+    }
 
-.site-nav__toggle::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 23px;
-  background-image: url("../img/icon-menu.svg");
-}
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5496bd;
+      border-top-color: #5496bd;
+    }
+  }
 
-.site-nav__logo {
-  position: absolute;
-  bottom: -98px;
-  left: calc(50% - 51px);
-  background: #ffffff;
+  .site-nav__item {
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
+  }
+
+  .site-nav__item--logo {
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+    height: 56px;
+    background-color: transparent;
+  }
+
+  .site-nav__item--logo a {
+    background: transparent;
+    padding: 0;
+  }
+
+  .site-nav__item--logo a[href] {
+    &:hover {
+      background-color: transparent;
+      border-top-color: transparent;
+    }
+
+    &:active {
+      background-color: transparent;
+      border-top-color: transparent;
+    }
+  }
+
+  .site-nav__toggle {
+    position: absolute;
+    bottom: 18px;
+    right: 20px;
+    z-index: 2;
+    display: block;
+    width: 23px;
+    height: 21px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+    }
+  }
+
+  .site-nav--closed .site-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 4px;
+    background-color: #81b3d2;
+    box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
+  }
+
+  .site-nav--opened .site-nav__toggle {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    width: 24px;
+    height: 20px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: -4px;
+      width: 34px;
+      height: 4px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .site-nav__logo {
+    padding: 0 0;
+    position: absolute;
+    bottom: -42px;
+    left: calc(50% - 51px);
+    background: transparent;
+  }
+
+  .site-nav--closed .site-nav__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .site-nav--closed .site-nav__item--logo {
+    display: block;
+  }
+
+  .site-nav--nojs .site-nav__toggle {
+    display: none;
+  }
+
+  .site-nav--nojs .site-nav__item {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .site-nav__list a {
+    padding: 0;
+    font-size: 14px;
+    line-height: 26px;
+    padding-top: 15px;
+  }
+
   .site-nav__list {
+    padding-left: 23px;
+    padding-right: 23px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 56px;
   }
 
   .site-nav__item,
   .site-nav__item a {
-    background: #ffffff;
+    background: transparent;
     color: #000000;
     min-width: 106px;
   }
@@ -88,10 +192,13 @@
     height: 83px;
   }
 
+  .site-nav__item--logo a {
+    padding-top: 0;
+  }
+
   .site-nav__logo-image {
-    background: url("../img/logo-sedona-tablet.svg");
     width: 102px;
-    height: 84px;
+    height: 56px;
   }
 
   .site-nav__toggle {
@@ -105,9 +212,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-nav__list {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
   .site-nav__logo-image {
-    background: url("../img/logo-sedona-desktop.svg");
-    width: 186px;
+    background-position: bottom;
+    width: 106px;
     height: 96px;
   }
 }

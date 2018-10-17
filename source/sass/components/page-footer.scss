@@ -6,8 +6,31 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  margin-bottom: 44px;
+  display: block;
 }
 
-/*.page-footer__social-list {}
+@media (min-width: $tablet-width) {
+  .page-footer {
 
-.page-footer__copyright {}*/
+    width: 650px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  .page-footer__hesh {
+
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 960px;
+  }
+}

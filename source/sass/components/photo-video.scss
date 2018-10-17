@@ -19,26 +19,9 @@
   padding-top: 22px;
 }
 
-/*.photo-video__img {}*/
 .photo-video__img {
   width: 280px;
   height: 280px;
-}
-
-.photo-video__img--sunset {
-  background: url("../img/photo-sunset-mobile@1x.jpg") 0 0 no-repeat;
-}
-
-.photo-video__img--cactus {
-  background: url("../img/photo-cactus-mobile@1x.jpg") 0 0 no-repeat;
-}
-
-.photo-video__img--roads {
-  background: url("../img/photo-roads-mobile@1x.jpg") 0 0 no-repeat;
-}
-
-.photo-video__img--bridge {
-  background: url("../img/photo-bridge-mobile@1x.jpg") 0 0 no-repeat;
 }
 
 .photo-video__desc {
@@ -85,24 +68,13 @@
     width: 100%;
   }
 
+  .photo-video__img {
+    width: 100%;
+    height: 266px;
+  }
+
   .photo-video__img--sunset {
-    width: 100%;
-    background: url("../img/photo-sunset-tablet@1x.jpg") 0 0 no-repeat;
-  }
-
-  .photo-video__img--cactus {
-    width: 100%;
-    background: url("../img/photo-cactus-tablet@1x.jpg") 0 0 no-repeat;
-  }
-
-  .photo-video__img--roads {
-    width: 100%;
-    background: url("../img/photo-roads-tablet@1x.jpg") 0 0 no-repeat;
-  }
-
-  .photo-video__img--bridge {
-    width: 100%;
-    background: url("../img/photo-bridge-tablet@1x.jpg") 0 0 no-repeat;
+    height: 400px;
   }
 
   .photo-video__desc {
@@ -111,6 +83,7 @@
 
   .photo-video__author {
     padding-left: 19px;
+    padding-bottom: 18px;
   }
 
   .photo-video__likes {
@@ -126,12 +99,15 @@
     text-align: left;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .photo-video__item {
     border-bottom: none;
     text-align: left;
     padding-left: 0;
+    height: 266px;
   }
 
   .photo-video__list li {
@@ -140,40 +116,22 @@
 
   .photo-video__list li:first-child {
     width: 100%;
-  }
-
-  .photo-video__img--sunset {
-    width: 100%;
-    background: url("../img/photo-sunset-desktop@1x.jpg") 0 0 no-repeat;
-  }
-
-  .photo-video__img--cactus {
-    width: 100%;
-    background: url("../img/photo-cactus-desktop@1x.jpg") 0 0 no-repeat;
-  }
-
-  .photo-video__img--roads {
-    width: 100%;
-    background: url("../img/photo-roads-desktop@1x.jpg") 0 0 no-repeat;
-  }
-
-  .photo-video__img--bridge {
-    width: 100%;
-    background: url("../img/photo-bridge-desktop@1x.jpg") 0 0 no-repeat;
+    margin-top: 10px;
+    height: 400px;
   }
 
   .photo-video__desc {
     position: absolute;
     color: #ffffff;
-    bottom: 50px;
-    left: 23px;
+    bottom: 40px;
+    left: 5px;
   }
 
   .photo-video__author {
     position: absolute;
     color: #ffffff;
-    bottom: 25px;
-    left: 23px;
+    bottom: 0;
+    left: 5px;
   }
 
   .photo-video__likes {

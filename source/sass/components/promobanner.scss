@@ -1,10 +1,7 @@
 .promobanner {
-  /*background: url("../img/white.svg") 0 0 no-repeat,*/
   background: #81b3d2;
   color: #ffffff;
 }
-
-/*.promobanner__text {}*/
 
 .promobanner__title {
   padding-top: 40px;
@@ -32,16 +29,35 @@
 }
 
 .promobanner__img--town {
-  background: url("../img/main-city-mobile@1x.jpg");
+  background-color: #40520e;
+  background-image: url("../img/main-city-mobile@1x.jpg");
 }
 
 .promobanner__img--bridge {
-  background: url("../img/main-bridge-mobile@1x.jpg");
+  background-color: #53362c;
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
 }
 
 @media (min-width: $tablet-width) {
   .promobanner {
     display: flex;
+  }
+
+  .promobanner__text {
+    width: 256px;
+  }
+
+  .promobanner__title {
+    padding-top: 44px;
+    padding-bottom: 12px;
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+
+  .promobanner__description {
+    padding-top: 5px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
   .promobanner__img {
@@ -61,6 +77,27 @@
 }
 
 @media (min-width: $desktop-width) {
+  .promobanner__text {
+    width: 400px;
+  }
+
+  .promobanner__title {
+    padding-top: 50px;
+    width: 150px;
+    padding-left: 124px;
+    padding-right: 124px;
+  }
+
+  .promobanner__description {
+    padding-left: 67px;
+    padding-right: 67px;
+  }
+
+  .promobanner__description--bridge {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+
   .promobanner__img {
     height: 256px;
     width: 800px;
