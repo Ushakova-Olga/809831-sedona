@@ -2,14 +2,10 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
-/*.opinion__title{}
-*/
 .opinion__data {
   margin-bottom: 23px;
   margin-left: 20px;
 }
-
-/*.opinion__input{}*/
 
 .opinion__label {
   font-size: 18px;
@@ -20,9 +16,31 @@
 
 @media (min-width: $tablet-width) {
   .opinion {
-    margin-left: 60px;
     border-bottom: none;
+  }
+
+  .opinion__title {
+    margin: 0;
+    padding-bottom: 75px;
+    text-align: left;
+  }
+
+  .opinion__data {
+    margin-bottom: 50px;
+    margin-left: 25px;
+  }
+
+  .opinion__label {
+    padding-left: 35px;
   }
 }
 
-/* (min-width: $desktop-width) {}*/
+@media (min-width: $desktop-width) {
+  .opinion__title {
+    padding-left: 82px;
+  }
+
+  .opinion__data {
+    padding-left: 7px;
+  }
+}

@@ -10,35 +10,65 @@
   padding-bottom: 15px;
 }
 
-/*.promotext__item--house {}
-
-.promotext__item--gift {}
-
-.promotext__item--eat {}*/
-
 .promotext__headline {
   text-align: left;
   margin: 0;
 }
 
-/*.promotext__description {}*/
-
 @media (min-width: $tablet-width) {
   .promotext {
     display: flex;
-    min-height: 280px;
-    justify-content: space-around;
+    min-height: 165px;
+    justify-content: space-between;
+    padding-right: 48px;
+    padding-left: 48px;
+    padding-top: 160px;
+    padding-bottom: 5px;
   }
 
   .promotext__item {
     width: 160px;
-    padding-top: 50px;
     text-align: center;
   }
 
   .promotext__headline {
     text-align: center;
   }
+
+  .promotext__item--house {
+    order: -1;
+  }
+
+  .promotext__item--gift {
+    order: 0;
+    width: 164px;
+  }
+
+  .promotext__item--eat {
+    order: -1;
+  }
+
+  .promotext__description {
+    margin: 0;
+    padding-top: 20px;
+  }
 }
 
-/*@media (min-width: $desktop-width) {}*/
+@media (min-width: $desktop-width) {
+  .promotext {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+
+  .promotext__item {
+    width: 260px;
+  }
+
+  .promotext__item--eat {
+    width: 287px;
+  }
+
+  .promotext__item--gift {
+    width: 260px;
+  }
+}

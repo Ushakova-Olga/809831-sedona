@@ -1,27 +1,28 @@
 body {
   font-family: "PT Sans", "Arial", sans-serif;
-  width: 320px;
   text-align: center;
   text-transform: uppercase;
   padding: 0;
-  margin: 0 auto;
-}
-
-@media (min-width: $tablet-width) {
-  body {
-    width: $tablet-width;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  html {
+  body {
     background-color: #f2f2f2;
   }
+}
 
-  body {
-    width: $desktop-width;
-    background-color: #ffffff;
-    box-shadow: 10px 0 20px 0 #dedede,
-      -10px 0 20px 0 #dedede;
-  }
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

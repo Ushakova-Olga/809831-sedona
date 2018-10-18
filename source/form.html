@@ -8,142 +8,181 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="site-nav">
-        <ul class="site-nav__list">
-          <li class="site-nav__item">
-            <a href="index.html">Главная</a>
+    <div class="container">
+      <header class="page-header">
+        <nav class="site-nav site-nav--nojs site-nav--closed">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-nav__item site-nav__item--active">
+              <a>Форма отзыва</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+            <li class="site-nav__item site-nav__item--logo">
+              <a class="site-nav__logo" href="index.html">
+                <img class="site-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+              </a>
+            </li>
+          </ul>
+          <button class="site-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </nav>
+      </header>
+      <main>
+        <div class="inner-background">
+          <img class="inner-background__img" src="img/text-sedona.svg" width="230" height="38" alt="Седона">
+        </div>
+        <section class="relation-back">
+          <header class="inner-header">
+            <h1 class="inner-header__headline sedona-title">Оставьте свой отзыв</h1>
+            <p class="inner-header__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
+          </header>
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
+            <section class="form__name name">
+              <h2 class="name__title sedona-title">Представьтесь:</h2>
+              <div class="name__data">
+                <label class="name__label-name" for="name1">Имя*:</label>
+                <input class="name__input-name  name__input-name--name1" id="name1" type="text" name="name1" placeholder="Петр">
+              </div>
+              <div class="name__data">
+                <label class="name__label-name" for="name2">Фамилия*:</label>
+                <input class="name__input-name name__input-name--name2" id="name2" type="text" name="name2" placeholder="Иванов">
+              </div>
+              <div class="name__data">
+                <label class="name__label-name" for="name3">Отчество*:</label>
+                <input class="name__input-name name__input-name--name3" id="name3" type="text" name="name3" placeholder="Александрович">
+              </div>
+            </section>
+            <section class="form__contacts contacts">
+              <h2 class="contacts__title sedona-title">Контактная информация:</h2>
+              <div class="contacts__data">
+                <label class="contacts__label-phone" for="phone">Телефон*:</label>
+                <input class="contacts__input-phone" id="phone" type="text" name="phone" placeholder="Введите телефон">
+              </div>
+              <div class="contacts__data">
+                <label class="contacts__label-email" for="email">Электронная почта*:</label>
+                <input class="contacts__input-email" id="email" type="email" name="email" placeholder="Введите e-mail">
+              </div>
+            </section>
+            <section class="form__opinion opinion">
+              <h2 class="opinion__title sedona-title">Ваше общее впечатление:</h2>
+              <div class="opinion__data">
+                <input class="opinion__input" id="opinion1"  type="radio" name="rad" value="rad1">
+                <label class="opinion__label" for="opinion1">Скорее положительное</label>
+              </div>
+              <div class="opinion__data">
+                <input class="opinion__input" id="opinion2"  type="radio" name="rad" value="rad2">
+                <label class="opinion__label" for="opinion2">Скорее отрицательное</label>
+              </div>
+              <div class="opinion__data">
+                <input class="opinion__input" id="opinion3"  type="radio" name="rad" value="rad3">
+                <label class="opinion__label" for="opinion3">Затрудняюсь ответить</label>
+              </div>
+            </section>
+            <section class="form__visited visited">
+              <h2 class="visited__title sedona-title">Посещенные достопримечательности:</h2>
+              <div class="visited__data">
+                <input class="visited__input" id="visited1"  type="checkbox" name="check1" value="check1" checked>
+                <label class="visited__label" for="visited1">Мост Дьявола</label>
+              </div>
+              <div class="visited__data">
+                <input class="visited__input" id="visited2"  type="checkbox" name="check2" value="check2" checked>
+                <label class="visited__label" for="visited2">Гора-Колокол</label>
+              </div>
+              <div class="visited__data">
+                <input class="visited__input" id="visited3"  type="checkbox" name="check3" value="check3" checked>
+                <label class="visited__label" for="visited3">Слайд-парк</label>
+              </div>
+              <div class="visited__data">
+                <input class="visited__input" id="visited4"  type="checkbox" name="check4" value="check4">
+                <label class="visited__label" for="visited4">Красные скалы</label>
+              </div>
+            </section>
+            <section class="form__emotion emotion">
+              <h2 class="emotion__title sedona-title">Опишите свои эмоции:</h2>
+              <textarea class="emotion__textarea" id="emotion" name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+            </section>
+            <button class="form__button sedona-button" type="submit">Отправить отзыв</button>
+          </form>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <a class="page-footer__hesh">#VisitSedona</a>
+        <ul class="page-footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--tweet">
+              <span class="visually-hidden">Твиттер</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                <g id="W6EeEF_1_">
+                  <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+                  </g>
+                </g>
+              </svg>
+            </a>
           </li>
-          <li class="site-nav__item">
-            <a href="photo.html">Фото и видео</a>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook">
+              <span class="visually-hidden">Facebook</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+                <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+              </svg>
+            </a>
           </li>
-          <li class="site-nav__item">Форма отзыва</li>
-          <li class="site-nav__item">
-            <a href="#">HTML Academy</a>
-          </li>
-          <li class="site-nav__item site-nav__item--logo">
-            <a class="site-nav__logo">
-              <img class="site-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--youtube">
+              <span class="visually-hidden">YouTube</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+                <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+              </svg>
             </a>
           </li>
         </ul>
-        <button class="site-nav__toggle" type="button">Открыть меню</button>
-        <!--a class="site-nav__logo">
-          <img class="site-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
-        </a-->
-      </nav>
-    </header>
-    <main>
-      <div class="inner-background">
-        <img class="inner-background__img" src="img/text-sedona.svg" width="230" height="38" alt="Седона">
-      </div>
-      <section class="relation-back">
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a  class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <img src="img/logo-htmlacademy.svg" width="26" height="34">
+          </a>
+        </div>
+      </footer>
+      <section class="modal modal--error">
         <header class="inner-header">
-          <h1 class="inner-header__headline sedona-title">Оставьте свой отзыв</h1>
-          <p class="inner-header__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
+          <h2 class="inner-header__headline sedona-title">Что-то пошло не так!</h2>
+          <p class="inner-header__intro">Проверьте поля выделенные красным, скорее всего вы забыли их заполнить</p>
         </header>
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <section class="form__name name">
-            <h2 class="name__title sedona-title">Представьтесь:</h2>
-            <div class="name__data">
-              <label class="name__label-name" for="name1">Имя*:</label>
-              <input class="name__input-name  name__input-name--name1" id="name1" type="text" name="name1" placeholder="Петр">
-            </div>
-            <div class="name__data">
-              <label class="name__label-name" for="name2">Фамилия*:</label>
-              <input class="name__input-name name__input-name--name2" id="name2" type="text" name="name2" placeholder="Иванов">
-            </div>
-            <div class="name__data">
-              <label class="name__label-name" for="name3">Отчество*:</label>
-              <input class="name__input-name name__input-name--name3" id="name3" type="text" name="name3" placeholder="Александрович">
-            </div>
-          </section>
-          <section class="form__contacts contacts">
-            <h2 class="contacts__title sedona-title">Контактная информация:</h2>
-            <div class="contacts__data">
-              <label class="contacts__label-phone" for="phone">Телефон*:</label>
-              <input class="contacts__input-phone" id="phone" type="text" name="phone" placeholder="Введите телефон">
-            </div>
-            <div class="contacts__data">
-              <label class="contacts__label-email" for="email">Электронная почта*:</label>
-              <input class="contacts__input-email" id="email" type="email" name="email" placeholder="Введите e-mail">
-            </div>
-          </section>
-          <section class="form__opinion opinion">
-            <h2 class="opinion__title sedona-title">Ваше общее впечатление:</h2>
-            <div class="opinion__data">
-              <input class="opinion__input" id="opinion1"  type="radio" name="rad" value="rad1">
-              <label class="opinion__label" for="opinion1">Скорее положительное</label>
-            </div>
-            <div class="opinion__data">
-              <input class="opinion__input" id="opinion2"  type="radio" name="rad" value="rad2">
-              <label class="opinion__label" for="opinion2">Скорее отрицательное</label>
-            </div>
-            <div class="opinion__data">
-              <input class="opinion__input" id="opinion3"  type="radio" name="rad" value="rad3">
-              <label class="opinion__label" for="opinion3">Затрудняюсь ответить</label>
-            </div>
-          </section>
-          <section class="form__visited visited">
-            <h2 class="visited__title sedona-title">Посещенные достопримечательности:</h2>
-            <div class="visited__data">
-              <input class="visited__input" id="visited1"  type="checkbox" name="check1" value="check1" checked>
-              <label class="visited__label" for="visited1">Мост Дьявола</label>
-            </div>
-            <div class="visited__data">
-              <input class="visited__input" id="visited2"  type="checkbox" name="check2" value="check2" checked>
-              <label class="visited__label" for="visited2">Гора-Колокол</label>
-            </div>
-            <div class="visited__data">
-              <input class="visited__input" id="visited3"  type="checkbox" name="check3" value="check3" checked>
-              <label class="visited__label" for="visited3">Слайд-парк</label>
-            </div>
-            <div class="visited__data">
-              <input class="visited__input" id="visited4"  type="checkbox" name="check4" value="check4">
-              <label class="visited__label" for="visited4">Красные скалы</label>
-            </div>
-          </section>
-          <section class="form__emotion emotion">
-            <h2 class="emotion__title sedona-title">Опишите свои эмоции:</h2>
-            <textarea class="emotion__textarea" id="emotion" name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
-          </section>
-          <button class="form__button sedona-button" type="submit">Оставить отзыв</button>
-        </form>
+        <button class="modal__button sedona-button">Ок</button>
       </section>
-    </main>
-    <footer class="page-footer">
-      <a class="page-footer__hesh">#VisitSedona</a>
-      <ul class="page-footer__social-list social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--tweet"></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--facebook"></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--youtube"></a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-    </footer>
-    <section class="modal modal--error">
-      <header class="inner-header">
-        <h2 class="inner-header__headline sedona-title">Что-то пошло не так!</h2>
-        <p class="inner-header__intro">Проверьте поля выделенные красным, скорее всего вы забыли их заполнить</p>
-      </header>
-      <button class="modal__button sedona-button">Ок</button>
-    </section>
-    <section class="modal modal--success">
-      <div class="modal__wrapper">
-        <header class="inner-header">
-          <h2 class="inner-header__headline sedona-title">Ваш отзыв отправлен!</h2>
-          <p class="inner-header__intro">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        </header>
-      </div>
-      <button class="modal__button sedona-button">Ок</button>
-    </section>
-  </body>
+      <section class="modal modal--success">
+        <div class="modal__wrapper">
+          <header class="inner-header">
+            <h2 class="inner-header__headline sedona-title">Ваш отзыв отправлен!</h2>
+            <p class="inner-header__intro">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          </header>
+        </div>
+        <button class="modal__button sedona-button">Ок</button>
+      </section>
+      <script>
+        var navMain = document.querySelector('.site-nav');
+        var navToggle = document.querySelector('.site-nav__toggle');
+
+        navMain.classList.remove('site-nav--nojs');
+
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('site-nav--closed')) {
+            navMain.classList.remove('site-nav--closed');
+            navMain.classList.add('site-nav--opened');
+          } else {
+            navMain.classList.add('site-nav--closed');
+            navMain.classList.remove('site-nav--opened');
+          }
+        });
+      </script>
+    </body>
+  </div>
 </html>

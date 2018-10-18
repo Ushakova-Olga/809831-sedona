@@ -2,16 +2,6 @@
   text-align: left;
 }
 
-/*.form__name {}
-
-.form__contacts {}
-
-.form__opinion {}
-
-.form__visited {}
-
-.form__emotion {}*/
-
 .form__button {
   width: 281px;
   height: 58px;
@@ -22,7 +12,7 @@
   .form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .form__opinion {
@@ -31,13 +21,18 @@
   }
 
   .form__name {
-    width: 278px;
+    width: 268px;
   }
 
   .form__contacts,
   .form__visited,
   .form__emotion {
     width: 650px;
+  }
+
+  .form__button {
+    width: 325px;
+    margin-bottom: 65px;
   }
 }
 
@@ -54,5 +49,9 @@
   .form__visited,
   .form__emotion {
     width: 960px;
+  }
+
+  .form__button {
+    width: 480px;
   }
 }

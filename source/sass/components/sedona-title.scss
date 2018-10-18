@@ -1,7 +1,12 @@
-
 .sedona-title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .sedona-title {
+    font-size: 21px;
+  }
 }
