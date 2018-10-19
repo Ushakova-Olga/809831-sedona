@@ -1,9 +1,16 @@
 .contacts {
   border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 17px;
+  margin-bottom: 12px;
+}
+
+.contacts__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .contacts__data {
-  margin-bottom: 23px;
+  margin-bottom: 11px;
   margin-left: 20px;
 }
 
@@ -20,7 +27,7 @@
   background: #f2f2f2;
   padding-left: 22px;
   padding-right: 82px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .contacts__input-phone::placeholder {
@@ -43,7 +50,7 @@
   background: #f2f2f2;
   padding-left: 22px;
   padding-right: 82px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .contacts__input-email::placeholder {
@@ -57,6 +64,8 @@
   .contacts {
     border-bottom: none;
     width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .contacts__title {

@@ -26,7 +26,11 @@
             </li>
             <li class="site-nav__item site-nav__item--logo">
               <a class="site-nav__logo" href="index.html">
-                <img class="site-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="site-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+                </picture>
               </a>
             </li>
           </ul>
