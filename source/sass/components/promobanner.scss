@@ -12,6 +12,7 @@
 .promobanner__number {
   font-size: 14px;
   line-height: 21px;
+  position: relative;
 }
 
 .promobanner__description {
@@ -36,7 +37,6 @@
     background-image: url("../img/main-city-mobile@2x.jpg");
     background-size: 320px 260px;
   }
-
 }
 
 .promobanner__img--bridge {

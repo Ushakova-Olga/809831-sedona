@@ -11,3 +11,17 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .sedona-button {
+    padding-left: 35px;
+    padding-right: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sedona-button {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

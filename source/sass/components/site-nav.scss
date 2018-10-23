@@ -196,11 +196,6 @@
     padding-top: 0;
   }
 
-/*  .site-nav__logo-image {
-    width: 102px;
-    height: 56px;
-  }*/
-
   .site-nav__toggle {
     display: none;
   }
@@ -209,12 +204,6 @@
     position: relative;
     bottom: 0;
   }
-
-/*  .site-nav__logo-picture {
-    position: absolute;
-    left: 0;
-    top: 0;
-  }*/
 }
 
 @media (min-width: $desktop-width) {
@@ -227,13 +216,6 @@
     padding-top: 0;
   }
 
-
-
-  /*.site-nav__logo {
-    position: relative;
-    bottom: 0;
-  }*/
-
   .site-nav__logo-image {
     position: absolute;
     left: -44px;
@@ -241,12 +223,4 @@
     width: 190px;
     height: 96px;
   }
-
-  /*.site-nav__logo-picture {
-    position: absolute;
-    left: -44px;
-    top: 0;
-    width: 190px;
-    height: 96px;
-  }*/
 }

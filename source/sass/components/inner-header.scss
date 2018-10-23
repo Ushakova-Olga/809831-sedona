@@ -20,7 +20,7 @@
 }
 
 .inner-header__headline--bottom {
-  padding-top: 31px;
+  padding-top: 34px;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,7 +32,8 @@
   }
 
   .inner-header__headline--bottom {
-    padding-top: 66px;
+    padding-top: 64px;
+    margin-bottom: 3px;
   }
 
   .inner-header__intro {
@@ -45,6 +46,7 @@
   .inner-header__intro--photo {
     padding-left: 163px;
     padding-right: 163px;
+    padding-bottom: 73px;
   }
 }
 

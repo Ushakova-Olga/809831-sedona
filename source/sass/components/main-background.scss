@@ -6,18 +6,20 @@
     #8fb6d3;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/bg-intro-triangle-mobile.svg") 0 363px no-repeat,
+    background: url("../img/bg-intro-triangle-mobile.svg") no-repeat,
       url("../img/bg-back-mobile@2x.jpg"),
       #8fb6d3;
-    background-size: 320 390;
+    background-size: contain, 768px 389px;
+    background-position: bottom, bottom;
   }
 
-  background-position: bottom;
+  background-position: bottom, bottom;
 }
 
 .main-background__img {
   padding-top: 90px;
 }
+
 
 @media (min-width: $tablet-width) {
   .main-background {
@@ -30,9 +32,10 @@
       background: url("../img/bg-intro-triangle-tablet.svg") 0 231px no-repeat,
         url("../img/bg-back-tablet@2x.jpg");
       background-size: 768px 518px;
+      background-position: bottom, bottom;
     }
 
-    background-position: bottom;
+    background-position: bottom, bottom;
   }
 
   .main-background__img {
@@ -53,8 +56,9 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/bg-intro-triangle-desktop.svg") 0 231px no-repeat,
         url("../img/bg-back-desktop@2x.jpg");
-      background-size: 1200px 518px;
+      background-size: contain, 1200px 518px;
+      background-position: bottom, bottom;
     }
-    background-position: bottom;
+    background-position: bottom, bottom;
   }
 }
