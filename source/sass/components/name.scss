@@ -12,6 +12,10 @@
   height: 58px;
   margin-bottom: 23px;
   margin-left: 20px;
+  margin-right: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .name__label-name {
@@ -30,14 +34,17 @@
 
 .name__input-name--name1 {
   width: 186px;
+  font: inherit;
 }
 
 .name__input-name--name2 {
   width: 148px;
+  font: inherit;
 }
 
 .name__input-name--name3 {
   width: 150px;
+  font: inherit;
 }
 
 .name__input-name::placeholder {
