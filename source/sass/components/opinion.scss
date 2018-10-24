@@ -25,6 +25,32 @@
   position: relative;
   border: none;
   margin: 0;
+
+  &::before {
+    content: "";
+    background-color: #f2f2f2;
+    position: absolute;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    top: 0;
+    left: 0;
+    z-index: 22;
+  }
+}
+
+.opinion__input:checked {
+  &::after {
+    content: "";
+    background-color: #333333;
+    position: absolute;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    top: 17px;
+    left: 17px;
+    z-index: 23;
+  }
 }
 
 .opinion__label {
@@ -32,8 +58,32 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: none;
-  padding-left: 20px;
+  padding-left: 20px; /*20px;*/
+  position: relative;
 }
+
+/*.opinion__indicator {
+  width: 56px;
+  height: 56px;
+  position: relative;
+  border: none;
+  margin: 0;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}*/
+
+/*.opinion__input:checked + .opinion__indicator {*/
+/*  position: absolute;*/
+/*  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #000000;*/
+/*  left: -56px;
+  top: -28px;*/
+/*  position: relative;
+  border: none;
+  margin: 0;*/
+/*}*/
 
 @media (min-width: $tablet-width) {
   .opinion {

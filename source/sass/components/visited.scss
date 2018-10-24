@@ -16,10 +16,45 @@
   align-items: center;
 }
 
-.visited__input {
+/*.visited__input {
   min-width: 56px;
   min-height: 56px;
   margin: 0;
+}*/
+
+.visited__input {
+  min-width: 56px;
+  min-height: 56px;
+  position: relative;
+  border: none;
+  margin: 0;
+
+  &::before {
+    content: "";
+    background-color: #f2f2f2;
+    position: absolute;
+    border-radius: 3px;
+    width: 56px;
+    height: 56px;
+    top: 0;
+    left: 0;
+    z-index: 22;
+  }
+}
+
+.visited__input:checked {
+  &::after {
+    content: "";
+    /*background-color: #333333;*/
+    background: url("../img/icon-tick.svg");
+    position: absolute;
+    /*border-radius: 50%;*/
+    width: 23px;
+    height: 16px;
+    top: 20px;
+    left: 17px;
+    z-index: 23;
+  }
 }
 
 .visited__label {
