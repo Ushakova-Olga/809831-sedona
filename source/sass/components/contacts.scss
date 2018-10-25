@@ -57,6 +57,16 @@
   padding-right: 82px;
   margin-top: 5px;
   font: inherit;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    outline: 4px solid #e5e5e5;
+    background: #ffffff;
+  }
 }
 
 .contacts__input-phone::placeholder {
@@ -109,6 +119,16 @@
   padding-right: 82px;
   margin-top: 5px;
   font: inherit;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    outline: 4px solid #e5e5e5;
+    background: #ffffff;
+  }
 }
 
 .contacts__input-email::placeholder {
@@ -201,6 +221,10 @@
   .contacts__label-phone {
     padding-left: 5px;
     padding-right: 10px;
+  }
+
+  .contacts__cont-phone {
+    display: none;
   }
 
   .contacts__input-phone {

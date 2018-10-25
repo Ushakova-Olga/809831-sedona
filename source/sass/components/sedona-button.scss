@@ -11,6 +11,20 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+
+  &:hover {
+    background: #669ec0;
+  }
+
+  &:active {
+    background: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background: #e5e5e5;
+    color: #ffffff;
+  }
 }
 
 @media (min-width: $tablet-width) {

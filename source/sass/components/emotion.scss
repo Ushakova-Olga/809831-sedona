@@ -1,6 +1,6 @@
 .emotion__title {
-  margin-top: 20px;
-  margin-bottom: 17px;
+  margin-top: 19px;
+  margin-bottom: 15px;
 }
 
 .emotion__textarea {
@@ -12,13 +12,19 @@
   margin-bottom: 23px;
   margin-left: 20px;
   font: inherit;
-}
 
-.emotion__textarea::placeholder {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
+  &::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  &:active,
+  &:focus {
+    outline: 4px solid #e5e5e5;
+    background: #ffffff;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -17,6 +17,18 @@
   height: 34px;
 }
 
+.copyright__link svg path {
+  fill: #000000;
+}
+
+.copyright__link:hover svg path {
+  fill: #81b3d2;
+}
+
+.copyright__link:active svg path {
+  fill: #b2b2b2;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     margin: 0;

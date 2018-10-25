@@ -1,45 +1,49 @@
 .opinion {
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   margin-bottom: 8px;
 }
 
 .opinion__title {
   margin: 0;
-  padding-top: 6px;
+  padding-top: 8px;
   padding-bottom: 23px;
 }
 
-.opinion__data {
-  margin-bottom: 11px;
+.opinion__label {
+  margin-bottom: 0;
   margin-left: 20px;
   min-height: 56px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+  padding-left: 76px;
+  padding-top: 14px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.opinion__input {
+.opinion__input + .opinion__indicator {
   width: 56px;
   height: 56px;
-  position: relative;
-  border: none;
-  margin: 0;
-
-  &::before {
-    content: "";
-    background-color: #f2f2f2;
-    position: absolute;
-    border-radius: 50%;
-    width: 56px;
-    height: 56px;
-    top: 0;
-    left: 0;
-    z-index: 22;
-  }
+  position: absolute;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
 }
 
-.opinion__input:checked {
+.opinion__input:hover + .opinion__indicator {
+  background-color: #e5e5e5;
+}
+
+.opinion__input:active + .opinion__indicator {
+  background-color: #d5d5d5;
+}
+
+.opinion__input:checked + .opinion__indicator {
   &::after {
     content: "";
     background-color: #333333;
@@ -53,37 +57,11 @@
   }
 }
 
-.opinion__label {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: none;
-  padding-left: 20px; /*20px;*/
-  position: relative;
+.opinion__input:checked:active + .opinion__indicator {
+  &::after {
+    background-color: #a4a4a4;
+  }
 }
-
-/*.opinion__indicator {
-  width: 56px;
-  height: 56px;
-  position: relative;
-  border: none;
-  margin: 0;
-  border-radius: 50%;
-  background-color: #f2f2f2;
-}*/
-
-/*.opinion__input:checked + .opinion__indicator {*/
-/*  position: absolute;*/
-/*  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background-color: #000000;*/
-/*  left: -56px;
-  top: -28px;*/
-/*  position: relative;
-  border: none;
-  margin: 0;*/
-/*}*/
 
 @media (min-width: $tablet-width) {
   .opinion {
@@ -97,13 +75,10 @@
     text-align: left;
   }
 
-  .opinion__data {
-    margin-bottom: 21px;
-    margin-left: 2px;
-  }
-
   .opinion__label {
-    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    padding-left: 76px;
   }
 }
 
@@ -113,7 +88,9 @@
     padding-top: 0;
   }
 
-  .opinion__data {
-    padding-left: 7px;
+  .opinion__label {
+    padding-left: 76px;
+    margin-left: 5px;
+    margin-bottom: 9px;
   }
 }

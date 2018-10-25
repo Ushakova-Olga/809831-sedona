@@ -1,5 +1,6 @@
 .page-footer {
   padding-top: 39px;
+  padding-bottom: 23px;
 }
 
 .page-footer__hesh {
@@ -12,19 +13,17 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-
     width: 650px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 36px;
     padding-top: 20px;
   }
 
   .page-footer__hesh {
-
     margin-bottom: 0;
   }
 }

@@ -30,6 +30,16 @@
   background: #f2f2f2;
   padding-left: 22px;
   padding-right: 22px;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    outline: 4px solid #e5e5e5;
+    background: #ffffff;
+  }
 }
 
 .name__input-name--name1 {

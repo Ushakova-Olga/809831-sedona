@@ -80,6 +80,16 @@
   fill: #5c6870;
 }
 
+.video-block__svg:hover path,
+.video-block__svg:hover polygon {
+  fill: #333333;
+}
+
+.video-block__svg:active path,
+.video-block__svg:active polygon {
+  fill: #b8b8b8;
+}
+
 @media (min-width: $tablet-width) {
   .video-block {
     margin-left: 58px;
@@ -145,6 +155,18 @@
   .video-block__svg path,
   .video-block__svg polygon {
     fill: #ffffff;
+  }
+
+  .video-block__svg:hover path,
+  .video-block__svg:hover polygon {
+    fill: #ffffff;
+    opacity: 0.6;
+  }
+
+  .video-block__svg:active path,
+  .video-block__svg:active polygon {
+    fill: #ffffff;
+    opacity: 0.3;
   }
 }
 
