@@ -1,68 +1,112 @@
 .visited {
   border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 2px;
 }
 
-.visited__data {
-  margin-bottom: 23px;
-  margin-left: 20px;
+.visited__title {
+  margin-top: 18px;
+  margin-bottom: 17px;
 }
 
 .visited__label {
+  margin-bottom: 40px;
+  margin-left: 20px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: none;
+  padding-left: 76px;
+  position: relative;
+  display: inline-block;
+  padding-top: 13px;
+  vertical-align: middle;
+}
+
+.visited__input + .visited__indicator {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+}
+
+.visited__input:hover + .visited__indicator {
+  background-color: #e5e5e5;
+}
+
+.visited__input:checked + .visited__indicator {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    top: 18px;
+    left: 16px;
+    z-index: 23;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.visited__input:active + .visited__indicator {
+  background-color: #d5d5d5;
+
+  &::after {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .visited {
     display: flex;
     flex-wrap: wrap;
+    align-content: space-between;
     border-bottom: none;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 55px;
+    margin-right: 55px;
   }
 
   .visited__title {
-    margin-top: 35px;
-    padding-left: 150px;
-    padding-right: 150px;
-    margin-bottom: 58px;
-  }
-
-  .visited__data {
-    width: 192px;
-    margin-left: 70px;
-    margin-bottom: 61px;
+    margin-top: 30px;
+    padding-left: 130px;
+    padding-right: 135px;
+    margin-bottom: 41px;
   }
 
   .visited__label {
-    padding-left: 50px;
+    min-width: 139px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    padding-left: 81px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .visited {
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .visited__title {
-    margin-top: 30px;
+    margin-top: 32px;
     width: 100%;
-    padding-left: 300px;
+    padding-left: 308px;
     padding-right: 300px;
-  }
-
-  .visited__data {
-    width: 177px;
-    margin-left: 23px;
+    margin-bottom: 41px;
   }
 
   .visited__label {
-    width: 100%;
-    padding-left: 38px;
+    min-width: 91px;
+    margin-left: 5px;
+    margin-right: 64px;
+    padding-left: 80px;
+    padding-right: 0;
+  }
+
+  .visited__label:nth-of-type(4n) {
+    margin-right: 0;
+    margin-left: 0;
   }
 }

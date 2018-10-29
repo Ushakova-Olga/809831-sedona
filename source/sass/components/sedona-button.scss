@@ -1,5 +1,6 @@
 .sedona-button {
-  width: 201px;
+  font: inherit;
+  min-width: 201px;
   height: 26px;
   background: #81b3d2;
   color: #ffffff;
@@ -10,4 +11,32 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+
+  &:hover {
+    background: #669ec0;
+  }
+
+  &:active {
+    background: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background: #e5e5e5;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .sedona-button {
+    padding-left: 35px;
+    padding-right: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sedona-button {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }

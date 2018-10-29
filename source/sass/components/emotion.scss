@@ -1,19 +1,30 @@
+.emotion__title {
+  margin-top: 19px;
+  margin-bottom: 15px;
+}
+
 .emotion__textarea {
   width: 236px;
-  height: 161px;
+  height: 126px;
   background: #f2f2f2;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 17px 19px;
   border: none;
   margin-bottom: 23px;
   margin-left: 20px;
-}
+  font: inherit;
 
-.emotion__textarea::placeholder {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
+  &::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  &:active,
+  &:focus {
+    outline: 4px solid #e5e5e5;
+    background: #ffffff;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -24,14 +35,14 @@
 
   .emotion__textarea {
     width: 603px;
-    height: 140px;
+    height: 130px;
     margin-left: 1px;
     padding-top: 17px;
-    margin-bottom: 59px;
+    margin-bottom: 52px;
   }
 
   .emotion__title {
-    margin-top: 25px;
+    margin-top: 31px;
     margin-bottom: 55px;
   }
 }
@@ -45,9 +56,11 @@
 
   .emotion__textarea {
     width: 916px;
+    margin-left: 5px;
+    padding-left: 22px;
   }
 
   .emotion__title {
-    margin-top: 22px;
+    margin-top: 30px;
   }
 }

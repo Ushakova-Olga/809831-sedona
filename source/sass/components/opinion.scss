@@ -1,17 +1,66 @@
 .opinion {
   border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 14px;
+  margin-bottom: 8px;
 }
 
-.opinion__data {
-  margin-bottom: 23px;
-  margin-left: 20px;
+.opinion__title {
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 23px;
 }
 
 .opinion__label {
+  margin-bottom: 0;
+  margin-left: 20px;
+  min-height: 56px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: none;
+  padding-left: 76px;
+  padding-top: 14px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.opinion__input + .opinion__indicator {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.opinion__input:hover + .opinion__indicator {
+  background-color: #e5e5e5;
+}
+
+.opinion__input:active + .opinion__indicator {
+  background-color: #d5d5d5;
+}
+
+.opinion__input:checked + .opinion__indicator {
+  &::after {
+    content: "";
+    background-color: #333333;
+    position: absolute;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    top: 17px;
+    left: 17px;
+    z-index: 23;
+  }
+}
+
+.opinion__input:checked:active + .opinion__indicator {
+  &::after {
+    background-color: #a4a4a4;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -21,26 +70,27 @@
 
   .opinion__title {
     margin: 0;
-    padding-bottom: 75px;
+    padding-top: 4px;
+    padding-bottom: 57px;
     text-align: left;
   }
 
-  .opinion__data {
-    margin-bottom: 50px;
-    margin-left: 25px;
-  }
-
   .opinion__label {
-    padding-left: 35px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    padding-left: 76px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .opinion__title {
     padding-left: 82px;
+    padding-top: 0;
   }
 
-  .opinion__data {
-    padding-left: 7px;
+  .opinion__label {
+    padding-left: 76px;
+    margin-left: 5px;
+    margin-bottom: 9px;
   }
 }

@@ -25,6 +25,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .site-nav__list a,
   .site-nav__list a[href] {
     &:hover {
       background-color: #669ec0;
@@ -41,6 +42,16 @@
   .site-nav__item {
     border-top: 1px solid #9ac2db;
     border-bottom: 1px solid #678fa8;
+
+    &:hover {
+      border-top: 1px solid #86b2cd;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    &:active {
+      border-top: 1px solid #77acca;
+      border-bottom: 1px solid #cccccc;
+    }
   }
 
   .site-nav__item--logo {
@@ -49,14 +60,19 @@
     border-bottom: none;
     height: 56px;
     background-color: transparent;
+
+    &:hover,
+    &:active {
+      border-top: none;
+      border-bottom: none;
+    }
   }
 
-  .site-nav__item--logo a {
+  .site-nav__item--logo a,
+  .site-nav__item--logo a[href] {
     background: transparent;
     padding: 0;
-  }
 
-  .site-nav__item--logo a[href] {
     &:hover {
       background-color: transparent;
       border-top-color: transparent;
@@ -165,6 +181,14 @@
     font-size: 14px;
     line-height: 26px;
     padding-top: 15px;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #b2b2b2;
+    }
   }
 
   .site-nav__list {
@@ -196,11 +220,6 @@
     padding-top: 0;
   }
 
-  .site-nav__logo-image {
-    width: 102px;
-    height: 56px;
-  }
-
   .site-nav__toggle {
     display: none;
   }
@@ -217,9 +236,15 @@
     padding-right: 65px;
   }
 
+  .site-nav__item--logo a {
+    padding-top: 0;
+  }
+
   .site-nav__logo-image {
-    background-position: bottom;
-    width: 106px;
+    position: absolute;
+    left: -44px;
+    top: 0;
+    width: 190px;
     height: 96px;
   }
 }
