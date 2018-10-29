@@ -23,6 +23,11 @@
   padding-top: 34px;
 }
 
+.inner-header__intro--modal {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 @media (min-width: $tablet-width) {
   .inner-header__headline {
     padding-top: 76px;
@@ -48,6 +53,16 @@
     padding-right: 163px;
     padding-bottom: 73px;
   }
+
+  .inner-header__intro--modal {
+    padding-left: 113px;
+    padding-right: 113px;
+  }
+
+  .inner-header__headline--modal {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -72,5 +87,10 @@
   .inner-header__intro--photo {
     padding-left: 380px;
     padding-right: 380px;
+  }
+
+  .inner-header__intro--modal {
+    padding-left: 113px;
+    padding-right: 113px;
   }
 }

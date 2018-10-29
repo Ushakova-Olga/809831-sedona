@@ -1,5 +1,98 @@
 .modal__button {
-  width: 180px;
+  min-width: 180px;
   height: 58px;
   border: none;
+  padding-left: 75px;
+  padding-right: 75px;
+  font-size: 18px;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  width: 208px;
+  left: 50%;
+  margin-left: -160px;
+  top: 30px;
+  margin-top: 30px;
+  background: #ffffff;
+  z-index: 100;
+  box-shadow: 0 10px 7px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal--error {
+  width: 320px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.modal--success {
+  width: 320px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.modal__button--error {
+  margin-bottom: 36px;
+}
+
+.modal__wrapper {
+  background: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.modal--show {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    position: fixed;
+    width: 280px;
+    left: calc(50% - 200px);
+    right: calc(50% - 200px);
+    top: 30px;
+    margin-top: 30px;
+    background: #ffffff;
+    z-index: 100;
+    box-shadow: 0 10px 7px 0 rgba(0, 0, 0, 0.15);
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .modal--success {
+    width: 640px;
+    left: calc(50% - 320px);
+    right: calc(50% - 320px);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .modal--error {
+    width: 400px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .modal--show {
+    display: block;
+  }
+
+  .modal__wrapper {
+    background: #f2f2f2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 90px;
+    padding-right: 90px;
+    display: block;
+  }
 }
