@@ -22,6 +22,11 @@
   width: 47px;
   height: 49px;
 
+  svg {
+    padding-top: 18px;
+    fill: #ffffff;
+  }
+
   &:hover {
     background: #669ec0;
   }
@@ -29,18 +34,10 @@
   &:active {
     background: #5496bd;
   }
-}
 
-.social-list__link svg {
-  padding-top: 18px;
-}
-
-.social-list__link svg path {
-  fill: #ffffff;
-}
-
-.social-list__link:active svg path {
-  fill: rgba(255, 255, 255, 0.3);
+  &:active svg {
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .social-list__link--facebook svg {

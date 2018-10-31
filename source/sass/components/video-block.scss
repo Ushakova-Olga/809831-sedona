@@ -76,18 +76,16 @@
   z-index: 21;
 }
 
-.video-block__svg path {
+.video-block__svg {
   fill: #5c6870;
-}
 
-.video-block__svg:hover path,
-.video-block__svg:hover polygon {
-  fill: #333333;
-}
+  &:hover {
+    fill: #333333;
+  }
 
-.video-block__svg:active path,
-.video-block__svg:active polygon {
-  fill: #b8b8b8;
+  &:active {
+    fill: #b8b8b8;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -152,21 +150,18 @@
     position: static;
   }
 
-  .video-block__svg path,
-  .video-block__svg polygon {
+  .video-block__svg {
     fill: #ffffff;
-  }
 
-  .video-block__svg:hover path,
-  .video-block__svg:hover polygon {
-    fill: #ffffff;
-    opacity: 0.6;
-  }
+    &:hover {
+      fill: #ffffff;
+      opacity: 0.6;
+    }
 
-  .video-block__svg:active path,
-  .video-block__svg:active polygon {
-    fill: #ffffff;
-    opacity: 0.3;
+    &:active {
+      fill: #ffffff;
+      opacity: 0.3;
+    }
   }
 }
 
