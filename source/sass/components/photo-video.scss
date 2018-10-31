@@ -42,7 +42,7 @@
   padding-left: 10px;
 }
 
-.photo-video__svg path {
+.photo-video__svg {
   fill: #b2b2b2;
 }
 
@@ -102,9 +102,6 @@
     position: absolute;
     bottom: 33px;
     right: 63px;
-  }
-
-  .photo-video__svg path {
     fill: #a9a9a9;
   }
 }
@@ -159,9 +156,6 @@
   .photo-video__svg {
     bottom: 30px;
     right: 63px;
-  }
-
-  .photo-video__svg path {
     fill: #ffffff;
   }
 }
