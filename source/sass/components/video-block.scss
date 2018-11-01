@@ -49,7 +49,7 @@
   top: -3px;
 }
 
-.video-block__repeat {
+.video-block__replay {
   position: absolute;
   width: 16px;
   height: 20px;
@@ -58,7 +58,7 @@
   z-index: 21;
 }
 
-.video-block__cc {
+.video-block__subtitles {
   position: absolute;
   width: 32px;
   height: 20px;
@@ -137,12 +137,12 @@
     left: 113px;
   }
 
-  .video-block__repeat {
+  .video-block__replay {
     position: static;
     order: -1;
   }
 
-  .video-block__cc {
+  .video-block__subtitles {
     position: static;
   }
 
