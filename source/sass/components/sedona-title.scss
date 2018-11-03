@@ -9,4 +9,51 @@
   .sedona-title {
     font-size: 21px;
   }
+
+  .sedona-title--line {
+    margin-left: 184px;
+    margin-right: 184px;
+    position: relative;
+    min-width: 280px;
+    display: inline-block;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: -182px;
+      top: 50%;
+      width: 120px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: -182px;
+      top: 50%;
+      width: 120px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sedona-title--line {
+    margin-left: 338px;
+    margin-right: 338px;
+    min-width: 290px;
+
+    &::before {
+      left: -335px;
+      width: 280px;
+    }
+
+    &::after {
+      right: -335px;
+      width: 280px;
+      height: 1px;
+    }
+  }
 }

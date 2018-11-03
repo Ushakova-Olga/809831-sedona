@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"-->
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/PTSans.woff2" as="font">
   </head>
   <body>
     <div style="display:none">
@@ -16,19 +17,19 @@
         <nav class="site-nav site-nav--nojs site-nav--closed">
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a href="index.html">Главная</a>
+              <a href="index.min.html">Главная</a>
             </li>
             <li class="site-nav__item">
               <a>Фото и видео</a>
             </li>
             <li class="site-nav__item">
-              <a href="form.html">Форма отзыва</a>
+              <a href="form.min.html">Форма отзыва</a>
             </li>
             <li class="site-nav__item">
               <a href="#">HTML Academy</a>
             </li>
             <li class="site-nav__item site-nav__item--logo">
-              <a class="site-nav__logo" href="index.html">
+              <a class="site-nav__logo" href="index.min.html">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
                   <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -177,6 +178,6 @@
         </div>
       </footer>
     </div>
-    <script  src="js/mobile-menu.js"></script>
+    <script  src="js/mobile-menu.min.js"></script>
   </body>
 </html>

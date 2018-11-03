@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"-->
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/PTSans.woff2" as="font">
   </head>
   <body>
     <div style="display:none">
@@ -19,7 +20,7 @@
               <a href="index.html">Главная</a>
             </li>
             <li class="site-nav__item">
-              <a href="photo.html">Фото и видео</a>
+              <a href="photo.min.html">Фото и видео</a>
             </li>
             <li class="site-nav__item">
               <a>Форма отзыва</a>
@@ -28,7 +29,7 @@
               <a href="#">HTML Academy</a>
             </li>
             <li class="site-nav__item site-nav__item--logo">
-              <a class="site-nav__logo" href="index.html">
+              <a class="site-nav__logo" href="index.min.html">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
                   <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -66,7 +67,7 @@
               </div>
             </section>
             <section class="form__contacts contacts">
-              <h2 class="contacts__title sedona-title">Контактная информация:</h2>
+              <h2 class="contacts__title sedona-title sedona-title--line">Контактная информация:</h2>
               <div class="contacts__data">
                 <label class="contacts__label-phone" for="phone"><span class="contacts__cont-phone">Контактный </span>телефон*:</label>
                 <div class="contacts__input-phone-container">
@@ -83,7 +84,7 @@
             <section class="form__opinion opinion">
               <h2 class="opinion__title sedona-title">Ваше общее впечатление:</h2>
                 <label class="opinion__label" for="opinion1">
-                  <input class="opinion__input visually-hidden" id="opinion1"  type="radio" name="rad" value="rad1">
+                  <input class="opinion__input visually-hidden" id="opinion1"  type="radio" name="rad" value="rad1" checked>
                   <span class="opinion__indicator"></span>
                   Скорее положительное
                 </label>
@@ -99,7 +100,7 @@
                 </label>
             </section>
             <section class="form__visited visited">
-              <h2 class="visited__title sedona-title">Посещенные достопримечательности:</h2>
+              <h2 class="visited__title sedona-title sedona-title--line">Посещенные достопримечательности:</h2>
                 <label class="visited__label" for="visited1">
                   <input class="visited__input visually-hidden" id="visited1"  type="checkbox" name="check1" value="check1" checked>
                   <span class="visited__indicator"></span>
@@ -122,7 +123,7 @@
                 </label>
             </section>
             <section class="form__emotion emotion">
-              <h2 class="emotion__title sedona-title">Опишите свои эмоции:</h2>
+              <h2 class="emotion__title sedona-title sedona-title--line">Опишите свои эмоции:</h2>
               <textarea class="emotion__textarea" id="emotion" name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
             </section>
             <button class="form__button sedona-button" type="submit">Отправить отзыв</button>
@@ -177,7 +178,7 @@
         </div>
       </section>
     </div>
-    <script  src="js/mobile-menu.js"></script>
-    <script  src="js/form.js"></script>
+    <script  src="js/mobile-menu.min.js"></script>
+    <script  src="js/form.min.js"></script>
   </body>
 </html>
