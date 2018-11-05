@@ -66,6 +66,17 @@
 @media (min-width: $tablet-width) {
   .opinion {
     border-bottom: none;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: -38px;
+      top: 0;
+      width: 1px;
+      height: calc(100% - 35px);
+      background-color: #dbdbdb;
+    }
   }
 
   .opinion__title {
@@ -83,6 +94,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .opinion {
+    &::after {
+      right: -80px;
+    }
+  }
+
   .opinion__title {
     padding-left: 82px;
     padding-top: 0;

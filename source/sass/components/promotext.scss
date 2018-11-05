@@ -62,13 +62,15 @@
     display: flex;
     min-height: 165px;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-right: 48px;
     padding-left: 48px;
-    padding-top: 160px;
-    padding-bottom: 5px;
+    padding-top: 56px;
+    padding-bottom: 45px;
   }
 
   .promotext__item {
+    padding-top: 104px;
     width: 160px;
     text-align: center;
   }
@@ -82,7 +84,7 @@
 
     &::before {
       left: 39px;
-      top: -104px;
+      top: 0;
       width: 75px;
       height: 73px;
     }
@@ -94,7 +96,7 @@
 
     &::before {
       left: 49px;
-      top: -106px;
+      top: -2px;
       width: 63px;
       height: 75px;
     }
@@ -105,7 +107,7 @@
 
     &::before {
       left: 44px;
-      top: -101px;
+      top: 3px;
       width: 76px;
       height: 69px;
     }
@@ -121,6 +123,7 @@
   .promotext {
     padding-right: 70px;
     padding-left: 70px;
+    padding-bottom: 69px;
   }
 
   .promotext__item {
@@ -132,7 +135,6 @@
 
     &::before {
       left: 94px;
-      top: -104px;
       width: 75px;
       height: 73px;
     }
@@ -143,7 +145,6 @@
 
     &::before {
       left: 100px;
-      top: -106px;
       width: 63px;
       height: 75px;
     }
@@ -154,7 +155,7 @@
 
     &::before {
       left: 106px;
-      top: -98px;
+      top: 6px;
       width: 76px;
       height: 69px;
     }

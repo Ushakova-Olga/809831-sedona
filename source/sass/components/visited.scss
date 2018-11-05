@@ -64,14 +64,12 @@
     flex-wrap: wrap;
     align-content: space-between;
     border-bottom: none;
-    margin-left: 55px;
-    margin-right: 55px;
   }
 
   .visited__title {
     margin-top: 30px;
-    padding-left: 130px;
-    padding-right: 135px;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 41px;
   }
 
@@ -81,28 +79,35 @@
     margin-bottom: 50px;
     padding-left: 81px;
   }
+
+  .visited__label:nth-of-type(2n+1) {
+    margin-left: 95px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .visited {
     margin: 0;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .visited__title {
     margin-top: 32px;
-    width: 100%;
-    padding-left: 308px;
-    padding-right: 300px;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 41px;
   }
 
   .visited__label {
     min-width: 91px;
     margin-left: 5px;
-    margin-right: 64px;
+    margin-right: 59px;
     padding-left: 80px;
     padding-right: 0;
+  }
+
+  .visited__label:nth-of-type(2n+1) {
+    margin-left: 5px;
   }
 
   .visited__label:nth-of-type(4n) {
