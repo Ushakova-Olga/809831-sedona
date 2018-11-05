@@ -25,11 +25,13 @@
     width: $tablet-width;
     height: 290px;
     background: url("../img/bg-intro-triangle-tablet.svg") 0 56px no-repeat,
-      url("../img/bg-back-tablet@1x.jpg");
+      url("../img/bg-back-tablet@1x.jpg"),
+      #8fb6d3;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/bg-intro-triangle-tablet.svg") no-repeat,
-        url("../img/bg-back-tablet@2x.jpg") no-repeat;
+        url("../img/bg-back-tablet@2x.jpg") no-repeat,
+        #8fb6d3;
       background-size: contain, 768px 518px;
       background-position: bottom, bottom;
     }
@@ -49,13 +51,14 @@
     width: $desktop-width;
     height: 302px;
     background: url("../img/bg-intro-triangle-desktop.svg") 0 56px no-repeat,
-      url("../img/bg-back-desktop@1x.jpg");
+      url("../img/bg-back-desktop@1x.jpg"),
+      #8fb6d3;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/bg-intro-triangle-desktop.svg") no-repeat,
-        url("../img/bg-back-desktop@2x.jpg") no-repeat;
+        url("../img/bg-back-desktop@2x.jpg") no-repeat,
+        #8fb6d3;
       background-size: contain, 1200px 518px;
-
       background-position: bottom, bottom;
     }
     background-position: bottom, bottom;

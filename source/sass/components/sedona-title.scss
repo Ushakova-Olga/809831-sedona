@@ -11,11 +11,12 @@
   }
 
   .sedona-title--line {
-    margin-left: 184px;
-    margin-right: 184px;
+    margin-left: 180px;
+    margin-right: 180px;
     position: relative;
-    min-width: 280px;
+    width: 288px;
     display: inline-block;
+    vertical-align: middle;
 
     &::before {
       position: absolute;
@@ -43,7 +44,7 @@
   .sedona-title--line {
     margin-left: 338px;
     margin-right: 338px;
-    min-width: 290px;
+    width: 290px;
 
     &::before {
       left: -335px;

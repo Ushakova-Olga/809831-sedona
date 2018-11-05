@@ -88,12 +88,11 @@
 @media (min-width: $desktop-width) {
   .visited {
     margin: 0;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .visited__title {
     margin-top: 32px;
-    width: 100%;
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 41px;
@@ -102,7 +101,7 @@
   .visited__label {
     min-width: 91px;
     margin-left: 5px;
-    margin-right: 66px;
+    margin-right: 59px;
     padding-left: 80px;
     padding-right: 0;
   }

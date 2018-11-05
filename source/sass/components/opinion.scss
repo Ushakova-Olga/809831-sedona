@@ -71,10 +71,10 @@
     &::after {
       position: absolute;
       content: "";
-      right: -46px;
+      right: -38px;
       top: 0;
       width: 1px;
-      height: 290px;
+      height: calc(100% - 35px);
       background-color: #dbdbdb;
     }
   }

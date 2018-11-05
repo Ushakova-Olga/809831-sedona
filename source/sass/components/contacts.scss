@@ -49,7 +49,9 @@
 }
 
 .contacts__input-phone {
-  height: 58px;
+  height: 26px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   width: 176px;
   border: none;
   background: #f2f2f2;
@@ -111,7 +113,9 @@
 }
 
 .contacts__input-email {
-  height: 58px;
+  height: 26px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   width: 176px;
   border: none;
   background: #f2f2f2;
@@ -203,13 +207,13 @@
   }
 
   .contacts__title {
-    width: 100%;
+    /*width: 100%;*/
     margin-top: 22px;
     margin-bottom: 65px;
   }
 
   .contacts__data {
-    min-width: 480px; /*408px;*/
+    min-width: 480px;
     display: block;
   }
 

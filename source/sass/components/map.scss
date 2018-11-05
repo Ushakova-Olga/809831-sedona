@@ -1,17 +1,30 @@
 .map {
+  position: relative;
+}
+
+.map__img {
   width: 320px;
   height: 350px;
 }
 
+.map__marker {
+  position: absolute;
+  left: calc(50% - 14px);
+  top: calc(50% - 14px);
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/svg-map-marker.svg");
+}
+
 @media (min-width: $tablet-width) {
-  .map {
+  .map__img {
     width: $tablet-width;
     height: 350px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .map {
+  .map__img {
     width: $desktop-width;
     height: 350px;
   }
